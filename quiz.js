@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (userAnswer === correctAnswer) {
 
       // 4. Provide feedback for correct answer
-      feedback.textContent = "Correct! 🎉";
+      feedback.textContent = "Correct! Well done";
       feedback.style.color = "green";
 
     } else {

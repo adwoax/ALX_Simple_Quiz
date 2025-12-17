@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
 
       // 5. Provide feedback for incorrect answer
-      feedback.textContent = "Incorrect. Try again.";
+      feedback.textContent = "That's Incorrect. Try again!";
       feedback.style.color = "red";
     }
   }

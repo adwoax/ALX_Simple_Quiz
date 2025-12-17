@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const submitButton = document.getElementById("submit-answer");
   const feedback = document.getElementById("feedback");
 
-  submitButton.addEventListener("click", function () {
+  function checkAnswer() {
     const selectedOption = document.querySelector('input[name="quiz"]:checked');
 
     if (!selectedOption) {
@@ -18,5 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
       feedback.textContent = "Incorrect. Try again.";
       feedback.style.color = "red";
     }
-  });
+  }
+
+  submitButton.addEventListener("click", checkAnswer);
 });
